@@ -9,7 +9,8 @@
 
         
         <h2 style="color:darkgreen;">Foods Priced Over $5.00</h2>
-        <xsl:apply-templates select="breakfast_menu/food[price &gt; 5.00]"/>
+       <xsl:apply-templates select="breakfast_menu/food[number(translate(price, '$', '')) &gt; 5.00]"/>
+
 
 
 
